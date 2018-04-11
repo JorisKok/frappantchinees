@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div id="intro-text" class="container-fluid">
+        <h2>Karakters leren</h2>
+        <p>
+            Studenten die Chinees leren hebben moeite om karakters uit elkaar te halen.
+            Het is daarom verstandig om karakters te leren op basis van hun individuele betekenis.
+            In mijn boek geef ik bij elk karakter duidelijk aan hoe het karakter is opgebouwd,
+            uit welke karakters het bestaat,
+            wat de uitspraak daarvan is en hoe je het karakter het beste kunt onthouden.
+        </p>
+        <br>
+        <a href="/shop/" class="btn btn-default btn-lg">Bestel het boek</a>
+    </div>
+
+    <div id="our-book" class="container-fluid">
+
+        <h3>
+            In het boek:
+        </h3>
+        <br>
+
+        <!-- Left-aligned media object -->
+        <div class="media">
+            <div class="media-left">
+                <img src="{% static 'images/book_5.png' %}" class="media-object" style="width:90px">
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">Meer dan 300 verschillende karakters worden behandeld</h4>
+                <p class="text-muted">
+                    Daarnaast zijn er zeer veel woorden bestaande uit meerdere karakters te vinden in de
+                    voorbeeldzinnen.
+                </p>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Right-aligned media object -->
+        <div class="media">
+            <div class="media-body">
+                <h4 class="media-heading">Alle karakters opgebroken en uitgelegd</h4>
+                <p class="text-muted">Karakters bestaan uit meerdere radicalen, oftewel andere karakters.
+                    Deze hebben hun eigen betekenis en komen in het boek uitgebreid aan bod.
+                </p>
+            </div>
+            <div class="media-right">
+                <img src="{% static 'images/book_4.png' %}" class="media-object" style="width:120px">
+            </div>
+        </div>
+        <hr>
+
+        <!-- Left-aligned media object -->
+        <div class="media">
+            <div class="media-left">
+                <img src={% static "images/book_1.png" %} class="media-object" style="width:60px">
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">Traditioneel en Simplified</h4>
+                <p class="text-muted">
+                    In China gebruikt men simplified karakters, terwijl ze in bijvoorbeeld Hong Kong en Taiwan
+                    traditionele karakters gebruiken. Het boek bevat zowel traditionele en simplified karakters.
+                </p>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Right-aligned media object -->
+        <div class="media">
+            <div class="media-body">
+                <h4 class="media-heading">Voorbeeldzinnen</h4>
+                <p class="text-muted">
+                    Bij elk beschreven karakter staat een voorbeeldzin. Deze is zo makkelijk mogelijk gemaakt om precies te zien
+                    hoe je daadwerkelijk een karakter kunt gebruiken.
+                </p>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Left-aligned media object -->
+        <div class="media">
+            <div class="media-body">
+                <h4>Bij elk karakter staat een tekening met de strookvolgorde</h4>
+                <h4 class="media-heading">... voor zowel traditionele karakters</h4>
+                <img src="{% static 'images/book_3a.png' %}" class="media-object">
+                <br>
+                <h4 class="media-heading">... als de strookvolgorde voor simplified karakters</h4>
+                <img src="{% static 'images/book_3b.png' %}" class="media-object">
+            </div>
+        </div>
+        <hr>
+
+        <br>
+        <a href="/shop/" class="btn btn-default btn-lg">Bestel het boek</a>
+        <br>
+
+        <p>&nbsp;</p>
+
+    </div>
+
+{% endblock %}

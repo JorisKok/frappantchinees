@@ -1,0 +1,437 @@
+/*
+Primary: #00c0ff
+P - light: #00c0ff
+P - dark: #00c0ff
+
+Secondary: #5c6bc0
+S - light: #8e99f3
+S - dark: #000
+
+Text op P: #000000
+Text on S: #ffffff
+
+Body background color: #E1E2E1
+Background-color within: #F5F5F6
+
+*/
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    padding-bottom: 75px;
+}
+
+p {
+    font-size: 18px;
+    color: #000000;
+    line-height: 1.56em;
+}
+
+ul {
+    font-size: 18px;
+    color: #000000;
+    line-height: 1.56em;
+}
+
+footer, footer .navbar, footer .navbar-fixed-bottom, footer div div {
+    background-color: #444444;
+}
+
+footer p, footer i {
+    color: #ffffff;
+}
+
+footer .row {
+    padding-top: 6px;
+}
+
+a, a:focus, a:hover {
+    color: #00c0ff;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+}
+
+.navbar {
+    background-color: #00c0ff;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.navbar-brand, .navbar-nav li a {
+    color: #ffffff !important;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+    background-color: #00c0ff;
+}
+
+.navbar-inverse {
+    border-color: #00c0ff;
+}
+
+.loadedContent {
+    margin-bottom: 60px;
+}
+
+#content .container-fluid {
+    margin-bottom: 45px;
+}
+
+li.active {
+    background-color: #00c0ff;
+    font-weight: bold;
+}
+
+.btn-default {
+    color: #00c0ff;
+    background-color: #ffffff;
+    border-color: #00c0ff;
+}
+
+.btn-default:hover {
+    color: #ffffff;
+    background-color: #00c0ff;
+    border-color: #00c0ff;
+}
+
+.disabled {
+    color: #dddddd !important; /* Important so it doesn't change when :hover */
+    background-color: #ffffff;
+    border-color: #dddddd;
+}
+
+.text-muted {
+    font-size: 16px;
+}
+
+.popover {
+    width: 300px;
+}
+
+.jumbotron {
+    color: #fff;
+    background: #00c0ff; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#00c0ff, yellow); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#00c0ff, yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#00c0ff, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#00c0ff, yellow); /* Standard syntax */
+
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 192, 255, 0.7)), to(#00c0ff));
+    background: -webkit-linear-gradient(left, #00c0ff, rgba(0, 192, 255, 0.7));
+    background: -moz-linear-gradient(left, #00c0ff, rgba(0, 192, 255, 0.7));
+    background: -ms-linear-gradient(left, #00c0ff, rgba(0, 192, 255, 0.7));
+    background: -o-linear-gradient(left, #00c0ff, rgba(0, 192, 255, 0.7));
+}
+
+.jumbotron p {
+    color: #fff;
+    background: none;
+}
+
+.no-style-pre {
+    display: table-cell;
+    font-family: "Open Sans", Arial, sans-serif;
+    padding: 8px 8px 8px 8px;
+    margin: 0 0 0 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(51, 51, 51);
+    word-break: normal;
+    background-color: white;
+    border: 0;
+    border-radius: 0;
+    word-wrap: break-word !important; /* Internet Explorer 5.5+ */
+    white-space: pre-wrap; /* css-3 */
+    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+    white-space: -o-pre-wrap; /* Opera 7 */
+}
+
+.registerButton {
+    margin-left: 15px;
+}
+
+.input-error {
+    border-color: #a94442;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+.errorlist {
+    font-size: 14px;
+    list-style: none;
+    margin: 0;
+    padding: 6px 0;
+    color: #a94442;
+}
+
+.btn-account {
+    width: 230px;
+}
+
+.footer-icons > div {
+    float: right;
+    margin-right: 15px;
+}
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.center-icon {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.center-buttons {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.center-buttons a {
+    margin-top: 15px;
+}
+
+.widget-col {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.learn-button {
+    width: 90%;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: auto;
+}
+
+.formatted-text {
+    white-space: pre-wrap;
+    text-align: center;
+}
+
+.problem-textarea {
+    width: 100%;
+}
+
+.text-pinyin {
+    font-style: italic;
+    line-height: 24px !important;
+}
+
+.text-simplified {
+    font-size: 18px;
+}
+
+.text-traditional {
+    font-size: 18px;
+}
+
+.text-translation {
+    line-height: 24px !important;
+}
+
+.text-translation:first-letter {
+    text-transform: capitalize;
+}
+
+.form-control-feedback {
+    top: 25px !important;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.icon-phone-fix {
+    width: 42px;
+    height: 42px;
+}
+
+.loader {
+    font-size: 10px;
+    margin: 50px auto;
+    text-indent: -9999em;
+    width: 11em;
+    height: 11em;
+    border-radius: 50%;
+    background: #000;
+    background: -moz-linear-gradient(left, #000 10%, rgba(255, 255, 255, 0) 42%);
+    background: -webkit-linear-gradient(left, #000 10%, rgba(255, 255, 255, 0) 42%);
+    background: -o-linear-gradient(left, #000 10%, rgba(255, 255, 255, 0) 42%);
+    background: -ms-linear-gradient(left, #000 10%, rgba(255, 255, 255, 0) 42%);
+    background: linear-gradient(to right, #000 10%, rgba(255, 255, 255, 0) 42%);
+    position: relative;
+    -webkit-animation: load3 1.4s infinite linear;
+    animation: load3 1.4s infinite linear;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.loader:before {
+    width: 50%;
+    height: 50%;
+    background: #000;
+    border-radius: 100% 0 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+}
+
+.loader:after {
+    background: #fff;
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    content: '';
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+@-webkit-keyframes load3 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes load3 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+[data-toggle="collapse"].collapsed .if-not-collapsed {
+    display: none;
+}
+
+[data-toggle="collapse"]:not(.collapsed) .if-collapsed {
+    display: none;
+}
+
+.if-collapsed .fa {
+    vertical-align: middle;
+    height: 5px;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+}
+
+.spread-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.spread-button {
+    margin-bottom: 6px;
+    width: 148px;
+}
+
+.reader-button {
+    margin: 15px 0 15px 0;
+}
+
+.badge {
+    font-size: 14px !important;
+    margin-top: 3px;
+}
+
+pre {
+    text-align: center;
+}
+
+.chinese-text {
+    font-family: '微軟正黑體';
+    text-align: center;
+    white-space: pre-wrap;
+}
+
+.pre-normal {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.pre-big {
+    font-size: 26px !important; /* required important here */
+    line-height: 38px !important; /* required important here */
+}
+
+.font-selector, .charactertype-selector {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: right;
+}
+
+.home-thumbnail {
+    height: 200px;
+    display: grid;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+}
+
+.item-footer {
+    margin-top: 15px;
+}
+
+.articles-box {
+    margin-bottom: 60px;
+}
+
+.navbar {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+nav {
+    margin-bottom: 16px;
+}
+
+#navbar-container {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.media-left {
+    margin-right: 16px;
+}
+
+.media-right {
+    margin-left: 16px;
+}

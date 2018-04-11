@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="row">
+
+        <div class="col-lg-3">
+
+            <h1 class="my-4">De winkel</h1>
+            <div class="list-group">
+                <a href="/shop/" class="list-group-item">Alles</a>
+                <a href="/shop/books" class="list-group-item">Boeken</a>
+                <a href="/shop/others" class="list-group-item">Overige</a>
+            </div>
+
+        </div>
+
+        <div class="col-lg-9">
+            <div class="row">
+
+
+                {% if request.resolver_match.url_name == 'shop-books' or request.resolver_match.url_name == 'shop-all' %}
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="well">
+                            <a href="#"><img src="{% static 'images/220x300-book.png' %}" alt=""></a>
+                            <div>
+                                <h4>
+                                    <a href="#" data-toggle="popover" data-placement="top" data-trigger="focus" data-html="true"
+                                       title="Verwacht in 2018"
+                                       data-content="Het boek is in de laatste fase van het schrijven en wordt in 2018 verwacht!<br><br> Maak een account aan om op de hoogte gehouden te worden. <br><br><a href='/accounts/register'>Account aanmaken</a>">Het Boek</a>
+                                </h4>
+                                <h5>&euro; 28</h5>
+                                <p>
+                                    Chinese karakters leren 1. <br>
+                                    Bevat voorbeeldzinnen, ezelsbruggetjes, pinyin, Simplified,
+                                    Traditioneel etc. <br>
+                                    <a href="#" data-toggle="popover" data-placement="top" data-trigger="focus" data-html="true"
+                                       title="Verwacht in 2018"
+                                       data-content="Het boek is in de laatste fase van het schrijven en wordt in 2018 verwacht!<br><br> Maak een account aan om op de hoogte gehouden te worden. <br><br><a href='/accounts/register'>Account aanmaken</a>">Lees
+                                        meer...</a>
+                                </p>
+                            </div>
+                            <div class="item-footer">
+                                <a href="#" class="btn btn-primary" data-placement="top" data-toggle="popover" data-trigger="focus"
+                                   data-html="true" title="Verwacht in 2018"
+                                   data-content="Het boek is in de laatste fase van het schrijven en wordt in 2018 verwacht!<br><br> Maak een account aan om op de hoogte gehouden te worden. <br><br><a href='/accounts/register'>Account aanmaken</a>">Bestellen</a>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if request.resolver_match.url_name == 'shop-others' or request.resolver_match.url_name == 'shop-all' %}
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="well">
+                            <a href="#"><img src="{% static 'images/220x300-flashcards.png' %}" alt=""></a>
+                            <div>
+                                <h4>
+                                    <a href="#" data-toggle="popover" data-placement="top" data-trigger="focus" data-html="true"
+                                       title="Verwacht in 2018"
+                                       data-content="De flashcards zijn nog in de maak en worden in 2018 verwacht!<br><br> Maak een account aan om op de hoogte gehouden te worden. <br><br><a href='/accounts/register'>Account aanmaken</a>">Flashcards
+                                        Beginners Set</a>
+                                </h4>
+                                <h5>&euro; 10</h5>
+                                <p>
+                                    Flashcards HSK 1 & 2. <br>
+                                    Geprint op hard papier en in broekzakformaat. Traditioneel en Simplified <br>
+                                    <a href="#" data-toggle="popover" data-placement="top" data-trigger="focus" data-html="true"
+                                       title="Verwacht in 2018"
+                                       data-content="De flashcards zijn nog in de maak en worden in 2018 verwacht!<br><br> Maak een account aan om op de hoogte gehouden te worden. <br><br><a href='/accounts/register'>Account aanmaken</a>">Lees
+                                        meer...</a>
+                                </p>
+                            </div>
+                            <div class="item-footer">
+                                <a href="#" class="btn btn-primary" data-placement="top" data-toggle="popover" data-trigger="focus"
+                                   data-html="true" title="Verwacht in 2018"
+                                   data-content="De flashcards zijn nog in de maak en worden in 2018 verwacht!<br><br> Maak een account aan om op de hoogte gehouden te worden. <br><br><a href='/accounts/register'>Account aanmaken</a>">Bestellen</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="well">
+                            <a href="#"><img src="{% static 'images/220x300-flashcards.png' %}" alt=""></a>
+                            <div>
+                                <h4>
+                                    <a href="#" data-toggle="popover" data-placement="top" data-trigger="focus" data-html="true"
+                                       title="Verwacht in 2018"
+                                       data-content="De flashcards zijn nog in de maak en worden in 2018 verwacht!<br><br> Maak een account aan om op de hoogte gehouden te worden. <br><br><a href='/accounts/register'>Account aanmaken</a>">Flashcards
+                                        Gemiddeld Set</a>
+                                </h4>
+                                <h5>&euro; 10</h5>
+                                <p>
+                                    Flashcards HSK 3 & 4. <br>
+                                    Geprint op hard papier en in broekzakformaat. Traditioneel en Simplified <br>
+                                    <a href="#" data-toggle="popover" data-placement="top"  data-trigger="focus" data-html="true"
+                                       title="Verwacht in 2018"
+                                       data-content="De flashcards zijn nog in de maak en worden in 2018 verwacht!<br><br> Maak een account aan om op de hoogte gehouden te worden. <br><br><a href='/accounts/register'>Account aanmaken</a>">Lees
+                                        meer...</a>
+                                </p>
+                            </div>
+                            <div class="item-footer">
+                                <a href="#" class="btn btn-primary" data-placement="top" data-toggle="popover" data-trigger="focus"
+                                   data-html="true" title="Verwacht in 2018"
+                                   data-content="De flashcards zijn nog in de maak en worden in 2018 verwacht!<br><br> Maak een account aan om op de hoogte gehouden te worden. <br><br><a href='/accounts/register'>Account aanmaken</a>">Bestellen</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="well">
+                            <a href="#"><img src="{% static 'images/220x300-flashcards.png' %}" alt=""></a>
+                            <div>
+                                <h4>
+                                    <a href="#" data-toggle="popover" data-placement="top" data-trigger="focus" data-html="true"
+                                       title="Verwacht in 2018"
+                                       data-content="De flashcards zijn nog in de maak en worden in 2018 verwacht!<br><br> Maak een account aan om op de hoogte gehouden te worden. <br><br><a href='/accounts/register'>Account aanmaken</a>">Flashcards
+                                        Gevorderd Set</a>
+                                </h4>
+                                <h5>&euro; 15</h5>
+                                <p>
+                                    Flashcards HSK 5 & 6. <br>
+                                    Geprint op hard papier en in broekzakformaat. Traditioneel en Simplified <br>
+                                    <a href="#" data-toggle="popover" data-placement="top" data-trigger="focus" data-html="true"
+                                       title="Verwacht in 2018"
+                                       data-content="De flashcards zijn nog in de maak en worden in 2018 verwacht!<br><br> Maak een account aan om op de hoogte gehouden te worden. <br><br><a href='/accounts/register'>Account aanmaken</a>">Lees
+                                        meer...</a>
+                                </p>
+                            </div>
+                            <div class="item-footer">
+                                <a href="#" class="btn btn-primary" data-placement="top" data-toggle="popover" data-trigger="click"
+                                   data-html="true" title="Verwacht in 2018"
+                                   data-content="De flashcards zijn nog in de maak en worden in 2018 verwacht!<br><br> Maak een account aan om op de hoogte gehouden te worden. <br><br><a href='/accounts/register'>Account aanmaken</a>">Bestellen</a>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+
+            </div>
+        </div>
+
+
+    </div>
+
+{% endblock %}
